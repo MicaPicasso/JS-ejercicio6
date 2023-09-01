@@ -1,0 +1,79 @@
+*{
+    margin:0;
+    font-family: monospace;
+    font-size: 1.5rem;
+}
+body{
+    background-image: url("https://i.pinimg.com/564x/ed/db/be/eddbbe033f996813a08d91af7622e214.jpg");
+    
+   
+}
+.modal-proyect{
+    border: solid 5px rgba(0, 0, 0, 0.258);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    backdrop-filter: blur(5px);
+
+}
+.modal-open{
+    font-size: 20px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: solid 1px black;
+    padding: 7px 10px;
+}
+.modal-open:hover{
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+}
+
+.modal-contain{
+    border: solid 1px black;
+    width: 50%;
+}
+
+.modal-contain{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    gap: 40px;
+    border: solid 5px rgba(0, 0, 0, 0.258);
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: white;
+    visibility: hidden;
+    z-index: -10;
+   
+}
+.modal-contain h2{
+    margin-left: 35%;
+    margin-top: 10%;
+}
+.modal-close{
+    background-color: transparent;
+    border: none;
+    margin-right: 10px;
+}
+.modal-close:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.show-modal{
+    visibility: visible;
+    z-index: 10;
+}
